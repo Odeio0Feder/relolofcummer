@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Está querendo se iludir?</h2>
+    <p class="banner__texto">Faça isso aqui e não correndo atrás de amor recíproco.</p>
+    <input type="search" class="banner__pesquisa" placeholder="O site é composto por 50% de ilusões e 50% de ótica">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Ilusões inéditas</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/cogumelos.webp"
+            alt="filhos inesperados"></div>
+        <div class="swiper-slide"><img src="img/heroina.webp"
+            alt="apostas online"></div>
+        <div class="swiper-slide"><img src="img/cocaina.png" alt="abusar de delivery">
+        </div>
+
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Comentário mais curtido</h3>
+          <h2 class="descrição__titulo-livro">Junin Cegeta</h2>
+          <p class="descrição__texto">Enxerguei nenhuma ilusão não aksdkaskdaksdk
+            
+          </p>
+        </div>
+     
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Outras ilusões</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/marijuana.jpg"
+            alt="sair para role"></div>
+        <div class="swiper-slide"><img src="img/para de mexer poha.jpg" alt="jogos online">
+        </div>
+        <div class="swiper-slide"><img src="img/minhas bolas.webp" alt="charlatões na internet">
+        </div>
+        <div class="swiper-slide"><img src="img/crack.jpg" alt="produtos desnecessários"></div>
+        <div class="swiper-slide"><img src="img/saxo.jpg" alt="ser clt"></div>
+        <div class="swiper-slide"><img src="img/jamba.webp" alt="tapa na pantera, soltar uma pipinha, chupar o dedo do gorila..."></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+
+          <h3 class="descrição__titulo">Comentários de nossos seguidores</h3>
+          <h2 class="descrição__titulo-livro">Bob Marley</h2>
+          <p class="descrição__texto">I wanna love you;
+            And treat you right;
+            I wanna love you;
+            Every day and every night...
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        
+      </div>
+
+     
+    </div>
+
+
+
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Experiência pensada para pessoas que enxerguem.</h2>
+    <p class="contato__texto">Não que alguem cego vá ler o texto a cima.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Site 100% lombrado</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
